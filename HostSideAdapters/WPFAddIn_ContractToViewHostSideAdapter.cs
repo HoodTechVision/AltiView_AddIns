@@ -39,5 +39,10 @@ namespace HostSideAdapters {
             FrameworkElement fe = FrameworkElementAdapters.ContractToViewAdapter(inhc);
             return fe;
         }
+
+        public bool Shutdown() {
+            wpfAddInContract.Shutdown();
+            return true;
+        }
     }
 }

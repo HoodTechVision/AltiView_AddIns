@@ -11,6 +11,7 @@ namespace AddInViews
     [AddInBase]
     public interface IWPFAddInView {
         FrameworkElement GetAddInUI();
+        bool Shutdown();
     }
     
 }

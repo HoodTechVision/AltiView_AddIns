@@ -14,5 +14,6 @@ namespace AddInContract {
     [AddInContract]
     public interface IWpfAddInContract : IContract {
         INativeHandleContract GetAddInUI();
+        bool Shutdown();
     }
 }

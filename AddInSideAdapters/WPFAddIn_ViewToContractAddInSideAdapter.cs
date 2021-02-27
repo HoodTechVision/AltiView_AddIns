@@ -28,5 +28,9 @@ namespace AddInSideAdapters
             INativeHandleContract inhc = FrameworkElementAdapters.ViewToContractAdapter(fe);
             return inhc;
         }
+
+        public bool Shutdown() {
+            return wpfAddInView.Shutdown();
+        }
     }
 }
